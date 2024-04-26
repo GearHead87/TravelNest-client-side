@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { Tooltip } from 'react-tooltip'
+import { isUrl } from "check-valid-url";
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -37,7 +38,7 @@ const NavBar = () => {
                             {NavLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">Tourism</a>
+                    <a className="btn btn-ghost text-xl">TravelNest</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -55,7 +56,7 @@ const NavBar = () => {
                                             className="w-10 rounded-full"
                                             data-tooltip-id="my-tooltip" data-tooltip-content={user.displayName}
                                         >
-                                            <img alt="Profile Pic" src={user?.photoURL} />
+                                            <img alt="Profile Pic" src={isUrl(user?.photoURL) ? user?.photoURL : "https://i.ibb.co/XDrnjqc/image.png"} />
                                         </div>
                                     </div>
                                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">

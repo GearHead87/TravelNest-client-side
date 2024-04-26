@@ -1,7 +1,23 @@
+import { useLoaderData } from "react-router-dom";
+import TouristsSpotCard from "../components/TouristsSpotCard";
+
 const AllTouristsSpot = () => {
+    const touristSpots = useLoaderData();
+    // console.log(touristSpots);
+
     return (
         <div>
-            <h2>this is Tourists</h2>            
+            <div className="grid grid-cols-2">
+                {
+                    touristSpots.map(spot => (
+                        <TouristsSpotCard
+                            key={spot._id}
+                            spot={spot}
+                        ></TouristsSpotCard>
+                    ))
+                }
+            </div>
+
         </div>
     );
 };
