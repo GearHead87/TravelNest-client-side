@@ -3,7 +3,6 @@ import TouristsSpotCard from "../components/TouristsSpotCard";
 
 const AllTouristsSpot = () => {
     const touristSpots = useLoaderData();
-    // console.log(touristSpots);
 
     return (
         <div>

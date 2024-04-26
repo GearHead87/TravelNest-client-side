@@ -42,7 +42,7 @@ const AddTouristsSpot = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if(data?.insertedId){
+                if (data?.insertedId) {
                     form.reset();
                     toast.success("Tourists Spot Added Successfully");
                 }
@@ -52,13 +52,6 @@ const AddTouristsSpot = () => {
 
     return (
         <div>
-            {/*
-  Heads up! 👋
-
-  Plugins:
-    - @tailwindcss/forms
-*/}
-
             <section className="bg-gray-100">
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
@@ -95,7 +88,7 @@ const AddTouristsSpot = () => {
                                 </div>
 
                                 <div>
-                                    <label className="sr-only" htmlFor="imageURL">tourists_spot_name</label>
+                                    <label className="sr-only" htmlFor="tourists_spot_name">tourists_spot_name</label>
                                     <input
                                         className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                         placeholder="tourists_spot_name"
@@ -107,7 +100,7 @@ const AddTouristsSpot = () => {
                                 </div>
 
                                 <div>
-                                    <label className="sr-only" htmlFor="imageURL">country_Name</label>
+                                    <label className="sr-only" htmlFor="country_Name">country_Name</label>
                                     <input
                                         className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                         placeholder="country_Name"
@@ -120,7 +113,7 @@ const AddTouristsSpot = () => {
 
                                 <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-2">
                                     <div>
-                                        <label className="sr-only" htmlFor="imageURL">location</label>
+                                        <label className="sr-only" htmlFor="location">location</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="location"
@@ -131,7 +124,7 @@ const AddTouristsSpot = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label className="sr-only" htmlFor="imageURL">seasonality</label>
+                                        <label className="sr-only" htmlFor="seasonality">seasonality</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="seasonality"
@@ -159,7 +152,7 @@ const AddTouristsSpot = () => {
                                     </div>
 
                                     <div>
-                                        <label className="sr-only" htmlFor="phone">User Name</label>
+                                        <label className="sr-only" htmlFor="userName">User Name</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="User Name"
@@ -173,7 +166,7 @@ const AddTouristsSpot = () => {
 
                                 <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
                                     <div>
-                                        <label className="sr-only" htmlFor="imageURL">average_cost</label>
+                                        <label className="sr-only" htmlFor="average_cost">average_cost</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="average_cost"
@@ -184,7 +177,7 @@ const AddTouristsSpot = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label className="sr-only" htmlFor="imageURL">totalVisitorsPerYear</label>
+                                        <label className="sr-only" htmlFor="totalVisitorsPerYear">totalVisitorsPerYear</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="totaVisitorsPerYear"
@@ -195,7 +188,7 @@ const AddTouristsSpot = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label className="sr-only" htmlFor="imageURL">travel_time</label>
+                                        <label className="sr-only" htmlFor="travel_time">travel_time</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
                                             placeholder="travel_time"
