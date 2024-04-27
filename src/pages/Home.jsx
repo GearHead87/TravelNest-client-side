@@ -6,7 +6,6 @@ import CountriesSection from "../components/CountriesSection";
 
 const Home = () => {
     const touristSpots = useLoaderData();
-    console.log(touristSpots);
     return (
         <div>
             <Banner></Banner>

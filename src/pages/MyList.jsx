@@ -62,7 +62,6 @@ const MyList = () => {
 
     return (
         <div>
-            <h2>this is my list</h2>
 
             <div className="mx-auto overflow-x-auto max-w-5xl">
                 <table
