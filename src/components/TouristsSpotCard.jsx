@@ -6,7 +6,7 @@ const TouristsSpotCard = ({ spot }) => {
 
     return (
         <div>
-            <Link to={`/tourists-spot-details/${_id}`} className="block rounded-lg p-4 shadow-sm shadow-indigo-100">
+            <div className="block rounded-lg p-4 shadow-sm shadow-indigo-100">
                 <img
                     alt=""
                     src={imageURL}
@@ -98,8 +98,15 @@ const TouristsSpotCard = ({ spot }) => {
                             </div>
                         </div>
                     </div>
+                    <Link
+                        to={`/tourists-spot-details/${_id}`}
+                        className="inline-block rounded border border-indigo-600 mt-4 px-9 py-2 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
+                        
+                    >
+                        View Details
+                    </Link>
                 </div>
-            </Link>
+            </div>
         </div>
     );
 };
