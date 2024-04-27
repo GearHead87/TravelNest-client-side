@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import TouristsSpots from "../components/TouristsSpots";
 import Slider from "../components/Slider";
 import CountriesSection from "../components/CountriesSection";
+import TestimonialSection from "../components/TestimonialSection";
+import FaqSection from "../components/FaqSection";
 
 const Home = () => {
     const touristSpots = useLoaderData();
@@ -14,6 +16,8 @@ const Home = () => {
                 spots={touristSpots}
             ></TouristsSpots>
             <CountriesSection></CountriesSection>
+            <TestimonialSection></TestimonialSection>
+            <FaqSection></FaqSection>
         </div>
     );
 };
