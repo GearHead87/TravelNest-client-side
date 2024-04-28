@@ -29,7 +29,7 @@ const CountriesSection = () => {
 
     return (
         <div className="my-10 mx-10">
-            <h2 className="text-center text-4xl my-10">Explore Tourists Spot of your Country</h2>
+            <h2 className="text-center text-4xl my-10 font-medium">Explore Tourists Spot of your Country</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
                     countries.map(country => (

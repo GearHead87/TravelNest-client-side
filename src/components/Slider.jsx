@@ -1,6 +1,9 @@
 const Slider = () => {
     return (
         <div className="max-w-5xl mx-auto my-10">
+            <div>
+                <h2 className="text-4xl text-center my-10 font-medium">Famous Destination</h2>
+            </div>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />

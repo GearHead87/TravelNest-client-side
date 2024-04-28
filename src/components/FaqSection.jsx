@@ -2,7 +2,7 @@ const FaqSection = () => {
     return (
         <div>
             <div>
-                <h2 className="text-center text-4xl my-10">Frequently Asked Question</h2>
+                <h2 className="text-center text-4xl my-10 font-medium">Frequently Asked Question</h2>
             </div>
             <div className="space-y-4 max-w-5xl mx-10 lg:mx-auto my-10">
                 <details
