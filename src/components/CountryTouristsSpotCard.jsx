@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'; 
 
 const CountryTouristsSpotCard = ({ spot }) => {
-    const { _id, imageURL, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear, email, userName } = spot;
+    const { _id, imageURL, tourists_spot_name, country_Name, location, description, average_cost, seasonality } = spot;
     return (
         <div>
             <article
@@ -57,3 +58,8 @@ const CountryTouristsSpotCard = ({ spot }) => {
 };
 
 export default CountryTouristsSpotCard;
+
+
+CountryTouristsSpotCard.propTypes = {
+    spot: PropTypes.object,
+}
