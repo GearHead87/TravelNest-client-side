@@ -13,7 +13,7 @@ const MyList = () => {
 
     useEffect(() => {
         const fetchSpots = async () => {
-            await fetch(`http://localhost:5000/tourist-spots-user/${user?.email}`)
+            await fetch(`http://b9a10-travelnest.vercel.app/tourist-spots-user/${user?.email}`)
                 .then(res => res.json())
                 .then(data => {
                     setSpots(data);
@@ -34,7 +34,7 @@ const MyList = () => {
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
-            fetch(`http://localhost:5000/tourist-spots/${id}`, {
+            fetch(`http://b9a10-travelnest.vercel.app/tourist-spots/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

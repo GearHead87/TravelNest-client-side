@@ -23,22 +23,22 @@ export const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: () => fetch('http://localhost:5000/tourist-spots/'),
+                loader: () => fetch('http://b9a10-travelnest.vercel.app/tourist-spots/'),
             },
             {
                 path: "all-tourists-spot",
                 element: <AllTouristsSpot></AllTouristsSpot>,
-                loader: () => fetch('http://localhost:5000/tourist-spots/'),
+                loader: () => fetch('http://b9a10-travelnest.vercel.app/tourist-spots/'),
             },
             {
                 path: "tourists-spot-details/:id",
                 element: <PrivateRoute> <TouristsSpotDetails></TouristsSpotDetails> </PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/tourist-spots/${params.id}`),
+                loader: ({params}) => fetch(`http://b9a10-travelnest.vercel.app/tourist-spots/${params.id}`),
             },
             {
                 path: "tourists-spot-country/:country_Name",
                 element: <PrivateRoute> <CountryTouristsSpots></CountryTouristsSpots> </PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/tourist-spots-country/${params.country_Name}`),
+                loader: ({params}) => fetch(`http://b9a10-travelnest.vercel.app/tourist-spots-country/${params.country_Name}`),
             },
             {
                 path: "add-tourists-spot",
@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
             {
                 path: "tourists-spot-update/:id",
                 element: <PrivateRoute> <UpdateTouristsSpot></UpdateTouristsSpot> </PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/tourist-spots/${params.id}`)
+                loader: ({params}) => fetch(`http://b9a10-travelnest.vercel.app/tourist-spots/${params.id}`)
             },
             {
                 path: "login",

@@ -7,7 +7,7 @@ const CountriesSection = () => {
 
     useEffect(() => {
         const fetchCountries = async () => {
-            await fetch(`http://localhost:5000/countries`)
+            await fetch(`http://b9a10-travelnest.vercel.app/countries`)
                 .then(res => res.json())
                 .then(data => {
                     setCountries(data);

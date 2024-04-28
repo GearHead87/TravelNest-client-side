@@ -9,7 +9,7 @@ const AllTouristsSpot = () => {
 
     const handleSort = (option) => {
         if (option === 1) {
-            fetch(`http://localhost:5000/tourist-spots-sort/`)
+            fetch(`http://b9a10-travelnest.vercel.app/tourist-spots-sort/`)
                 .then(res => res.json())
                 .then(data => {
                     SetSortedTouristSpots(data);

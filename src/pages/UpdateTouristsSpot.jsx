@@ -20,7 +20,7 @@ const UpdateTouristsSpot = () => {
         const totalVisitorsPerYear = form.totalVisitorsPerYear.value;
 
         const TouristSpotInfo = { imageURL, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear };
-        fetch(`http://localhost:5000/tourist-spots/${_id}`, {
+        fetch(`http://b9a10-travelnest.vercel.app/tourist-spots/${_id}`, {
             method: "PATCH",
             headers: {
                 'content-type': 'application/json'
