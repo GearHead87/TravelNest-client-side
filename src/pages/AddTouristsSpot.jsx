@@ -79,7 +79,7 @@ const AddTouristsSpot = () => {
                                     <label className="sr-only" htmlFor="imageURL">imageURL</label>
                                     <input
                                         className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                        placeholder="imageURL"
+                                        placeholder="Image URL"
                                         type="text"
                                         id="imageURL"
                                         name="imageURL"
@@ -91,7 +91,7 @@ const AddTouristsSpot = () => {
                                     <label className="sr-only" htmlFor="tourists_spot_name">tourists_spot_name</label>
                                     <input
                                         className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                        placeholder="tourists_spot_name"
+                                        placeholder="Tourists Spot Name"
                                         type="text"
                                         id="tourists_spot_name"
                                         name="tourists_spot_name"
@@ -103,7 +103,7 @@ const AddTouristsSpot = () => {
                                     <label className="sr-only" htmlFor="country_Name">country_Name</label>
                                     <input
                                         className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                        placeholder="country_Name"
+                                        placeholder="Country Name"
                                         type="text"
                                         id="country_Name"
                                         name="country_Name"
@@ -116,7 +116,7 @@ const AddTouristsSpot = () => {
                                         <label className="sr-only" htmlFor="location">location</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                            placeholder="location"
+                                            placeholder="Location"
                                             type="text"
                                             id="location"
                                             name="location"
@@ -127,7 +127,7 @@ const AddTouristsSpot = () => {
                                         <label className="sr-only" htmlFor="seasonality">seasonality</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                            placeholder="seasonality"
+                                            placeholder="Seasonality"
                                             type="text"
                                             id="seasonality"
                                             name="seasonality"
@@ -142,7 +142,7 @@ const AddTouristsSpot = () => {
                                         <label className="sr-only" htmlFor="email">Email</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                            placeholder="Email address"
+                                            placeholder="Email Address"
                                             type="email"
                                             id="email"
                                             name="email"
@@ -169,7 +169,7 @@ const AddTouristsSpot = () => {
                                         <label className="sr-only" htmlFor="average_cost">average_cost</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                            placeholder="average_cost"
+                                            placeholder="Average Cost"
                                             type="number"
                                             id="average_cost"
                                             name="average_cost"
@@ -180,7 +180,7 @@ const AddTouristsSpot = () => {
                                         <label className="sr-only" htmlFor="totalVisitorsPerYear">totalVisitorsPerYear</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                            placeholder="totaVisitorsPerYear"
+                                            placeholder="Tota Visitors Per Year"
                                             type="number"
                                             id="totalVisitorsPerYear"
                                             name="totalVisitorsPerYear"
@@ -191,7 +191,7 @@ const AddTouristsSpot = () => {
                                         <label className="sr-only" htmlFor="travel_time">travel_time</label>
                                         <input
                                             className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                            placeholder="travel_time"
+                                            placeholder="Travel Time"
                                             type="text"
                                             id="travel_time"
                                             name="travel_time"

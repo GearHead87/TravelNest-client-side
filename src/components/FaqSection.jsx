@@ -4,7 +4,7 @@ const FaqSection = () => {
             <div>
                 <h2 className="text-center text-4xl my-10">Frequently Asked Question</h2>
             </div>
-            <div className="space-y-4 max-w-5xl mx-auto my-10">
+            <div className="space-y-4 max-w-5xl mx-10 lg:mx-auto my-10">
                 <details
                     className="group border-s-4 border-green-500 bg-gray-50 p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden"
                     open

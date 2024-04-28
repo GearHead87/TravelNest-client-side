@@ -56,7 +56,7 @@ const NavBar = () => {
                             {NavLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">TravelNest</a>
+                    <Link to={'/'} className="btn btn-ghost text-xl">TravelNest</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -67,7 +67,7 @@ const NavBar = () => {
                     {
                         user
                             ? <>
-                                <button onClick={handleLogout} className="btn mr-4">Logout</button>
+                                <button onClick={handleLogout} className="btn btn-sm md:btn mr-4">Logout</button>
                                 <div>
                                     <label className='cursor-pointer grid place-items-center'>
                                         <input
@@ -121,8 +121,8 @@ const NavBar = () => {
                                 </div>
                             </>
                             : <>
-                                <Link to={"/login"} className="btn">Login</Link>
-                                <Link to={"/register"} className="btn ml-4">Register</Link>
+                                <Link to={"/login"} className="btn btn-sm md:btn">Login</Link>
+                                <Link to={"/register"} className="btn btn-sm md:btn ml-4">Register</Link>
                             </>
                     }
 

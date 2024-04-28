@@ -1,14 +1,35 @@
 import { useLoaderData } from "react-router-dom";
 import TouristsSpotCard from "../components/TouristsSpotCard";
+import { useState } from "react";
 
 const AllTouristsSpot = () => {
     const touristSpots = useLoaderData();
+    const [sortedTouristSpots, SetSortedTouristSpots] = useState(touristSpots);
+
+    const handleSort = (option) => {
+        if (option === 1) {
+            fetch(`http://localhost:5000/tourist-spots-sort/`)
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    SetSortedTouristSpots(data);
+                })
+        }
+    }
 
     return (
         <div>
+            <div className="flex justify-center items-center">
+                <div className="dropdown">
+                    <div tabIndex={0} role="button" className="btn m-1">Sort</div>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li onClick={() => handleSort(1)}><a>Average Cost</a></li>
+                    </ul>
+                </div>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
-                    touristSpots.map(spot => (
+                    sortedTouristSpots.map(spot => (
                         <TouristsSpotCard
                             key={spot._id}
                             spot={spot}

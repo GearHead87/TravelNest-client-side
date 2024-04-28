@@ -12,7 +12,6 @@ const Banner = () => {
                             className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
                         >
                             Explore <span>
-
                                 <Typewriter
                                     words={['Amazing', 'Breathtaking', 'Unforgettable']}
                                     loop
@@ -22,7 +21,7 @@ const Banner = () => {
                                     deleteSpeed={20}
                                     delaySpeed={1000}
                                 />
-                            </span>
+                            </span> <br />
                             <span className="sm:block"> Tourist Spots </span>
                         </h1>
 
