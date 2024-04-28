@@ -33,7 +33,7 @@ const AddTouristsSpot = () => {
         const TouristSpotInfo = { imageURL, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear, email, userName };
         console.log(TouristSpotInfo);
 
-        fetch("http://b9a10-travelnest.vercel.app/tourist-spots/", {
+        fetch("https://b9a10-travelnest.vercel.app/tourist-spots/", {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

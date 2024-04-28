@@ -72,7 +72,7 @@ const TouristsSpotCard = ({ spot }) => {
                             <div className="mt-1.5 sm:mt-0">
                                 <p className="text-gray-500">Travel Time</p>
 
-                                <p className="font-medium">{travel_time} Day</p>
+                                <p className="font-medium">{travel_time}</p>
                             </div>
                         </div>
 

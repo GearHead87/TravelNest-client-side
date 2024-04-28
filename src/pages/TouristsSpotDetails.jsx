@@ -55,7 +55,7 @@ const TouristsSpotDetails = () => {
                         className="grid grid-cols-1 gap-1 p-3 even:bg-gray-50 sm:grid-cols-3 sm:gap-4 even:dark:bg-gray-800"
                     >
                         <dt className="font-medium text-gray-900 dark:text-white">Travel Time</dt>
-                        <dd className="text-gray-700 sm:col-span-2 dark:text-gray-200">{travel_time} day</dd>
+                        <dd className="text-gray-700 sm:col-span-2 dark:text-gray-200">{travel_time}</dd>
                     </div>
 
                     <div
