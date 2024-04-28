@@ -12,7 +12,6 @@ const AllTouristsSpot = () => {
             fetch(`http://localhost:5000/tourist-spots-sort/`)
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     SetSortedTouristSpots(data);
                 })
         }
