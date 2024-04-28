@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useLoaderData } from "react-router-dom";
 
 const TouristsSpotDetails = () => {
@@ -5,10 +6,13 @@ const TouristsSpotDetails = () => {
     const { imageURL, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear } = spot;
     return (
         <div>
-            <div className="flow-root rounded-lg border border-gray-100 py-3 shadow-sm dark:border-gray-700">
+            <Helmet>
+                <title>{tourists_spot_name}</title>
+            </Helmet>
+            <div className="flow-root rounded-lg border mx-4 border-gray-100 py-3 shadow-sm dark:border-gray-700">
                 <dl className="-my-3 divide-y divide-gray-100 text-sm dark:divide-gray-700">
 
-                    <img src={imageURL} alt="" className="h-56 w-full rounded-md object-cover" />
+                    <img src={imageURL} alt="" className="h-56 w-full rounded-md object-cover mb-4" />
 
                 </dl>
                 <dl className="-my-3 divide-y divide-gray-100 text-sm dark:divide-gray-700">

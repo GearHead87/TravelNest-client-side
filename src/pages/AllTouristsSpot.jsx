@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import TouristsSpotCard from "../components/TouristsSpotCard";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const AllTouristsSpot = () => {
     const touristSpots = useLoaderData();
@@ -19,6 +20,9 @@ const AllTouristsSpot = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>All Tourists Spots</title>
+            </Helmet>
             <div className="flex justify-center items-center">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn m-1">Sort</div>

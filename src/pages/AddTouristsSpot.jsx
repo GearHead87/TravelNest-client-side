@@ -3,6 +3,7 @@ import loadingAnimation from "./travelBusAnimation.json";
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 const style = {
     display: 'flex',
     justifyContent: 'center',
@@ -52,6 +53,9 @@ const AddTouristsSpot = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Add Tourists Spot</title>
+            </Helmet>
             <section className="bg-gray-100">
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">

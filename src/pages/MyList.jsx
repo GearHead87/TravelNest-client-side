@@ -3,6 +3,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const MyList = () => {
     const { user } = useContext(AuthContext);
@@ -62,7 +63,9 @@ const MyList = () => {
 
     return (
         <div>
-
+            <Helmet>
+                <title>My List</title>
+            </Helmet>
             <div className="mx-auto overflow-x-auto max-w-5xl">
                 <table
                     className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm dark:divide-gray-700 dark:bg-gray-900"

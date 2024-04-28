@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
@@ -38,7 +39,10 @@ const UpdateTouristsSpot = () => {
     }
     return (
         <div>
-            <section className="bg-white dark:bg-gray-900">
+            <Helmet>
+                <title>Update - {tourists_spot_name}</title>
+            </Helmet>
+            <section className="bg-gray-100 dark:bg-gray-900">
                 <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
                     <aside className="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
                         <img

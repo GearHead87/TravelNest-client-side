@@ -5,11 +5,15 @@ import Slider from "../components/Slider";
 import CountriesSection from "../components/CountriesSection";
 import TestimonialSection from "../components/TestimonialSection";
 import FaqSection from "../components/FaqSection";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     const touristSpots = useLoaderData();
     return (
         <div>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <Banner></Banner>
             <Slider></Slider>
             <TouristsSpots

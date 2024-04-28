@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
 
@@ -55,6 +56,9 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <section className="bg-white dark:bg-gray-900">
                 <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
                     <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
@@ -65,7 +69,7 @@ const Register = () => {
                         />
 
                         <div className="hidden lg:relative lg:block lg:p-12">
-                            <a className="block text-white" href="#">
+                            <p className="block text-white" href="#">
                                 <span className="sr-only">Home</span>
                                 <svg
                                     className="h-8 sm:h-10"
@@ -78,15 +82,14 @@ const Register = () => {
                                         fill="currentColor"
                                     />
                                 </svg>
-                            </a>
+                            </p>
 
                             <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
                                 Welcome to Squid 🦑
                             </h2>
 
                             <p className="mt-4 leading-relaxed text-white/90">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam,
-                                quibusdam aperiam voluptatum.
+                                Join us today to start exploring and planning your next adventure! Create your account to unlock exclusive travel insights and personalized recommendations
                             </p>
                         </div>
                     </section>
@@ -96,9 +99,8 @@ const Register = () => {
                     >
                         <div className="max-w-xl lg:max-w-3xl">
                             <div className="relative -mt-16 block lg:hidden">
-                                <a
+                                <p
                                     className="inline-flex size-16 items-center justify-center rounded-full bg-white text-blue-600 sm:size-20 dark:bg-gray-900"
-                                    href="#"
                                 >
                                     <span className="sr-only">Home</span>
                                     <svg
@@ -112,7 +114,7 @@ const Register = () => {
                                             fill="currentColor"
                                         />
                                     </svg>
-                                </a>
+                                </p>
 
                                 <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl dark:text-white">
                                     Welcome to Squid 🦑
