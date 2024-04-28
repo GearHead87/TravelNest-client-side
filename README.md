@@ -6,6 +6,11 @@ Visit the live site: [TravelNest](https://b9a10-travelnest.web.app/)
 
 ## Category: Southeast Asia
 
+## Package Implement
+- Lottie React
+- React-simple-typewriter
+- React-tooltip
+
 ### Key Features
 - Discover Popular Tourist Destinations in Southeast Asia
 - Plan Your Itinerary with Detailed Travel Guides
