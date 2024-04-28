@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const UpdateTouristsSpot = () => {
     const spot = useLoaderData()
-    const { _id, imageURL, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear, email, userName } = spot;
+    const { _id, imageURL, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear } = spot;
 
     const handleUpdateTouristsSpot = e => {
         e.preventDefault();
@@ -29,7 +29,7 @@ const UpdateTouristsSpot = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                if (data?.modifiedCount>0) {
+                if (data?.modifiedCount > 0) {
                     toast.success("Tourists Spot Successfully Updated");
                 }
             })

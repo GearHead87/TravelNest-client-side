@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -6,18 +6,14 @@ import toast from "react-hot-toast";
 const Login = () => {
 
     const { loginUser, googleLoginUser, githubLoginUser } = useContext(AuthContext);
-    const [showPassword, setShowPassword] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
-    const [error, setError] = useState(null);
-
 
     const handleFormLogin = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const email = form.get("email");
         const password = form.get("password");
-        setError(null);
         loginUser(email, password)
             .then((result) => {
                 console.log(result.user);
@@ -26,13 +22,11 @@ const Login = () => {
             })
             .catch((error) => {
                 console.log(error);
-                setError(error.message);
                 toast.error(`${error.message}`)
             })
     };
 
     const handleGoogleLogin = () => {
-        setError(null);
         googleLoginUser()
             .then((result) => {
                 console.log(result.user)
@@ -41,11 +35,10 @@ const Login = () => {
             })
             .catch((error) => {
                 console.log(error)
-                setError(error.message);
+                toast.error(error.message);
             })
     }
     const handleGithubLogin = () => {
-        setError(null);
         githubLoginUser()
             .then((result) => {
                 console.log(result.user)
@@ -54,7 +47,7 @@ const Login = () => {
             })
             .catch((error) => {
                 console.log(error)
-                setError(error.message);
+                toast.error(error.message);
             })
     }
 

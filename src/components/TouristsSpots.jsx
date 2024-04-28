@@ -1,4 +1,5 @@
 import TouristsSpotCard from "./TouristsSpotCard";
+import PropTypes from 'prop-types';
 
 const TouristsSpots = ({ spots }) => {
     return (
@@ -19,3 +20,7 @@ const TouristsSpots = ({ spots }) => {
 };
 
 export default TouristsSpots;
+
+TouristsSpots.propTypes = {
+    spots: PropTypes.array,
+}

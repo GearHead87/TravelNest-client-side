@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import toast from "react-hot-toast";
@@ -6,8 +6,6 @@ import toast from "react-hot-toast";
 const Register = () => {
 
     const { createUser, updateUserProfile } = useContext(AuthContext);
-    const [error, setError] = useState(null);
-    const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
 
 
@@ -19,22 +17,18 @@ const Register = () => {
         const email = form.get("email");
         const password = form.get("password");
         console.log(name, email, photoURL, password);
-        setError(null);
         const hasLowerCase = /[a-z]/.test(password);
         const hasUpperCase = /[A-Z]/.test(password);
 
         if (password.length < 6) {
-            setError("Password must be at least 6 characters long.");
             toast.error("Password must be at least 6 characters long.");
             return;
         }
         if (!hasLowerCase) {
-            setError("Password must contain at least one lowercase letter.");
             toast.error("Password must contain at least one lowercase letter.");
             return;
         }
         if (!hasUpperCase) {
-            setError("Password must contain at least one uppercase letter.");
             toast.error("Password must contain at least one uppercase letter.");
             return;
         }
@@ -50,13 +44,11 @@ const Register = () => {
                     .catch((error) => {
                         console.log(error)
                     })
-                setError(null);
                 toast.success(`Successfully registered user: ${name}`)
                 navigate("/");
             })
             .catch((error) => {
                 console.log(error);
-                setError(error.message);
                 toast.error(error.message);
             })
     }
