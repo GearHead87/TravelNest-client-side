@@ -120,7 +120,7 @@ const UpdateTouristsSpot = () => {
                                         htmlFor="country_Name"
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-200"
                                     >
-                                        country_Name
+                                        Country Name
                                     </label>
 
                                     <input
@@ -137,7 +137,7 @@ const UpdateTouristsSpot = () => {
                                         htmlFor="location"
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-200"
                                     >
-                                        location
+                                        Location
                                     </label>
 
                                     <input
@@ -154,7 +154,7 @@ const UpdateTouristsSpot = () => {
                                         htmlFor="seasonality"
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-200"
                                     >
-                                        seasonality
+                                        Seasonality
                                     </label>
 
                                     <input
@@ -171,7 +171,7 @@ const UpdateTouristsSpot = () => {
                                         htmlFor="average_cost"
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-200"
                                     >
-                                        average_cost
+                                        Average Cost
                                     </label>
 
                                     <input
@@ -188,7 +188,7 @@ const UpdateTouristsSpot = () => {
                                         htmlFor="totalVisitorsPerYear"
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-200"
                                     >
-                                        totalVisitorsPerYear
+                                    Total Visitors Per Year
                                     </label>
 
                                     <input
@@ -205,7 +205,7 @@ const UpdateTouristsSpot = () => {
                                         htmlFor="travel_time"
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-200"
                                     >
-                                        travel_time
+                                        Travel Time
                                     </label>
 
                                     <input
@@ -222,7 +222,7 @@ const UpdateTouristsSpot = () => {
                                         htmlFor="description"
                                         className="block text-sm font-medium text-gray-700 dark:text-gray-200"
                                     >
-                                        description
+                                        Short Description
                                     </label>
 
                                     <textarea

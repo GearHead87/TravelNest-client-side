@@ -164,6 +164,7 @@ const AddTouristsSpot = () => {
                                             id="userName"
                                             defaultValue={user?.displayName}
                                             name="userName"
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -178,6 +179,7 @@ const AddTouristsSpot = () => {
                                             id="average_cost"
                                             name="average_cost"
                                             required
+                                            
                                         />
                                     </div>
                                     <div>
@@ -214,6 +216,7 @@ const AddTouristsSpot = () => {
                                         rows="8"
                                         id="description"
                                         name="description"
+                                        required
                                     ></textarea>
                                 </div>
 

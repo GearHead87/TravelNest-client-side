@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet";
 
@@ -137,7 +137,7 @@ const Login = () => {
                         <div className="flex items-center justify-between">
                             <p className="text-sm text-gray-500">
                                 No account?
-                                <a className="underline" href="#">Sign up</a>
+                                <Link to={"/register"} className="underline" >Sign up</Link>
                             </p>
 
                             <button
